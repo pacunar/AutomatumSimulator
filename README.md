@@ -14,8 +14,7 @@ The application features are:
 * Transform and **NFA** into a **DFA** using a Closure algorithm, presenting all steps involved in the transformation
 * The transformed **DFA** can also be minimized and evaluated using a set of characters as input.
 
-Examples:
----------
+### Examples:
 
 A simple **DFA** example: 
 
@@ -38,12 +37,19 @@ Doing a quick search at Github, I've found many similar solutions, but not many 
 
 There are many issues and features that can be added, and existing features that can be improved (a *lot*!).
 
-For now, I'll use my free time to improve it (see the big TODO list).
+For now, I'll use my free time to improve it, besides it's probable that I'll use it in the near future so I'm the most interested in improving this.
 
 Wishful thinking: someone with more expertise in C# can help me improve the code. 
 
 
 TODO: 
-=====
+-----
 
-
+There's a **BIG** list of bugs, issues and improvements, I'll try to list them by priority: 
+* Right now (I'm a little embarassed about this) there's no objects in the source code. The main class has almost all source code of the application, making it unreadable and very inefficient
+* Translate texts (labels, messages, titles, etc.) from spanish to english -- use a translation library for supporting both languages?
+* Improve drawing algorithm of automatically generated automata after minimize or transform.
+* Add visual feedback to the creation of states and lines
+* Allow actions on created elements: selection, drag&drop, deleting, double-click or right-click
+* Allow selecting lines for editing its information
+* Check bugs after transformation
